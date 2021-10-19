@@ -1,0 +1,45 @@
+<!-- <!doctype html>
+<html>
+  <script src="sort.js"></script>
+  <script>
+    var result = Module.onRuntimeInitialized = () => {
+      // var vec = Module.assignAsVector(5)
+      // vec[0] = 1
+      // vec[1] = 5
+      // vec[2] = 34
+      // vec[3] = 3
+      // vec[4] = 16
+      console.log("lerp result: " + Module.lerp(1,2,0.5))
+      Module.insertion_sort(vec)
+    }
+  </script>
+</html> -->
+
+<!doctype html>
+<html>
+  <div id="container">
+    <a href="./insertion_sort.html">Insertion Sort</a>
+    <br />
+    <a href="./bubble_sort.html">Bubble Sort</a>
+    <br />
+    <a href="./merge_sort.html">Merge Sort</a>
+  </div>
+  <!-- <script src="sort.js"></script>
+  <script>
+    var result = Module.onRuntimeInitialized = () => {
+      let test = new Module.SortAlgorithm()
+      var vec = test.assignAsVector(0)
+      for(var i = 0; i < 1000; i++) {
+        vec.push_back(Math.floor(Math.random() * 2000))
+      }
+      var list = test.insertion_sort(vec)
+      // console.log(vec.size())
+      // console.log(list.size())
+      for(var i = 0; i < list.size(); i++) {
+        document.getElementById("container").innerHTML += list.get(i) + ", "
+      }
+      document.getElementById("container").innerHTML += "<br /><br />"
+      document.getElementById("container").innerHTML += "Element Count: " + list.size()
+    }
+  </script> -->
+</html>
