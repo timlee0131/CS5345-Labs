@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <div id="container">
+    <a href="./sort.html">Go Back to Main Page</a>
+    <h2>Insertion Sort</h2>
+    <hr />
+  </div>
+  <script src="../mthreadSort.js"></script>
+  <script>
+    var result = Module.onRuntimeInitialized = () => {
+      let test = new Module.SortAlgorithm()
+      var vec = test.assignAsVector()
+      for(var i = 0; i < 1000; i++) {
+        vec.push_back(Math.floor(Math.random() * 2000))
+      }
+      const t0 = performance.now()
+      var list = test.mthread_insertion_sort(vec)
+      const t1 = performance.now()
+      var timing = (t1-t0) * 1000
+
+      // console.log(vec.size())
+      // console.log(list.size())
+      document.getElementById("container").innerHTML += "Element Count: " + list.size()
+      document.getElementById("container").innerHTML += "<br />"
+      document.getElementById("container").innerHTML += "Time Lapse: " + timing + " microseconds"
+      document.getElementById("container").innerHTML += "<br /><br />"
+      for(var i = 0; i < list.size(); i++) {
+        document.getElementById("container").innerHTML += list.get(i) + ", "
+      }
+    }
+  </script>
+</html>
