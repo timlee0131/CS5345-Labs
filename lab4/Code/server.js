@@ -40,7 +40,7 @@ wss.on('connection', ws => {
     msg['js_timing'] = (t1 - t0) * 1000
 
     console.log(`type of sorting method used: ${msg['method']}`)
-    console.log(`checking if returned list is properly sorted: ${msg['type']}`)
+    // console.log(`checking if returned list is properly sorted: ${msg['type']}`)
     console.log(`timing data as calculated from client: ${msg['timing']}`)
     console.log(`js timing: ${msg['js_timing']}`)
     console.log()
