@@ -40,3 +40,9 @@
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+
+@media screen and (max-width: 1024px) {
+  .blockquote {
+      display: none !important;
+  }
+}

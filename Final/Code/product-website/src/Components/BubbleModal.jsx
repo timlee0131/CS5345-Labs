@@ -19,7 +19,14 @@ function BubbleModal() {
             <Modal.Title>Bubble Sort</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Worst and Average Case Time Complexity: O(n*n). Worst case occurs when array is reverse sorted. <br />
+            Best Case Time Complexity: O(n). Best case occurs when array is already sorted. <br />
+            Auxiliary Space: O(1) <br />
+            Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted. <br />
+            Sorting In Place: Yes <br />
+            Stable: Yes <br />
+            Due to its simplicity, bubble sort is often used to introduce the concept of a sorting algorithm. 
+            In computer graphics it is popular for its capability to detect a very small error (like swap of just two elements) in almost-sorted arrays and fix it with just linear complexity (2n). For example, it is used in a polygon filling algorithm, where bounding lines are sorted by their x coordinate at a specific scan line (a line parallel to x axis) and with incrementing y their order changes (two elements are swapped) only at intersections of two lines (Source: Wikipedia)
           </Modal.Body>
           <Modal.Footer>
             <Button variant="success" onClick={handleClose}>

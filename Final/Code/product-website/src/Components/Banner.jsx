@@ -1,9 +1,12 @@
+import React from 'react'
+
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import logo from '../images/logo2.jpeg'
+import '../App.css'
 
 function Banner() {
     return (
@@ -12,7 +15,7 @@ function Banner() {
         <Card.ImgOverlay>
             <br />
             <br />
-            <Container fluid="md">
+            <Container>
                 <Row>
                     <Col xs={6}>
                         <blockquote class="blockquote text-center" fluid>

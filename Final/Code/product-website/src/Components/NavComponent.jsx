@@ -2,8 +2,8 @@ import React from 'react';
 import './../App.css';
 
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+// import Nav from 'react-bootstrap/Nav'
+// import NavDropdown from 'react-bootstrap/NavDropdown'
 import Container from 'react-bootstrap/Container'
 
 function NavComponent(props) {
@@ -11,7 +11,7 @@ function NavComponent(props) {
         <Navbar bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand href="#home">Sorting Engine</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
@@ -24,7 +24,7 @@ function NavComponent(props) {
                     <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
-                </Navbar.Collapse>
+                </Navbar.Collapse> */}
             </Container>
         </Navbar>
     )

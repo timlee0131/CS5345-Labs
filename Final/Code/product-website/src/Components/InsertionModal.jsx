@@ -19,7 +19,14 @@ function InsertionModal() {
             <Modal.Title>Insertion Sort</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Time Complexity: O(n^2) <br />
+            Auxiliary Space: O(1) <br />
+            Boundary Cases: Insertion sort takes maximum time to sort if elements are sorted in reverse order. And it takes minimum time (Order of n) when elements are already sorted. <br />
+            Algorithmic Paradigm: Incremental Approach <br />
+            Sorting In Place: Yes <br />
+            Stable: Yes <br />
+
+            Uses: Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted, only few elements are misplaced in complete big array.
           </Modal.Body>
           <Modal.Footer>
             <Button variant="danger" onClick={handleClose}>

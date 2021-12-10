@@ -19,8 +19,7 @@ function SortingCards() {
                 <Card.Body>
                 <Card.Title>Bubble Sort</Card.Title>
                 <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
+                    Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -35,8 +34,7 @@ function SortingCards() {
                 <Card.Body>
                 <Card.Title>Merge Sort</Card.Title>
                 <Card.Text>
-                    This card has supporting text below as a natural lead-in to additional
-                    content.{' '}
+                    Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -51,9 +49,7 @@ function SortingCards() {
                 <Card.Body>
                 <Card.Title>Insertion Sort</Card.Title>
                 <Card.Text>
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This card has even longer content than the first to
-                    show that equal height action.
+                    The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>

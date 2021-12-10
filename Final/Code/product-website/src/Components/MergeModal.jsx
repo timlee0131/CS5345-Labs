@@ -19,7 +19,15 @@ function MergeModal() {
             <Modal.Title>Merge Sort</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Time Complexity: Sorting arrays on different machines. Merge Sort is a recursive algorithm and time complexity can be expressed as following recurrence relation. 
+            T(n) = 2T(n/2) + θ(n)
+            <br />
+            The above recurrence can be solved either using the Recurrence Tree method or the Master method. It falls in case II of Master Method and the solution of the recurrence is θ(nLogn). <br />
+            Time complexity of Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves. <br />
+            Auxiliary Space: O(n) <br />
+            Algorithmic Paradigm: Divide and Conquer <br />
+            Sorting In Place: No in a typical implementation <br />
+            Stable: Yes
           </Modal.Body>
           <Modal.Footer>
             <Button variant="info" onClick={handleClose}>

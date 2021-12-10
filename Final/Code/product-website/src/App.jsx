@@ -16,13 +16,13 @@ function App() {
       <br />
       <br />
 
-      <blockquote class="blockquote text-center">
+      {/* <blockquote class="blockquote text-center">
         <p class="mb-0">
           In computing, sorting is the process of rearranging an initially unordered sequence of records until they are ordered with respect to all of or that part of each record designated as its key.
         </p>
         <br />
         <footer class="blockquote-footer">Edwin D. Reilly  <cite title="Source Title">Encyclopedia of Computer Science</cite></footer>
-      </blockquote>
+      </blockquote> */}
 
       <br />
 
