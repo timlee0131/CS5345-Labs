@@ -6,7 +6,7 @@
     <h2>Bubble Sort</h2>
     <hr />
   </div>
-  <script src="../mthreadSort.js"></script>
+  <script src="../sort.js"></script>
   <script>
     var result = Module.onRuntimeInitialized = () => {
       let test = new Module.SortAlgorithm()
@@ -16,7 +16,7 @@
       }
 
       const t0 = performance.now()
-      var list = test.mthread_bubble_sort(vec)
+      var list = test.bubble_sort(vec)
       const t1 = performance.now()
       var timing = (t1-t0) * 1000
 

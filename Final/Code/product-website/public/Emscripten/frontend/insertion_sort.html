@@ -9,7 +9,7 @@
       <h2>Insertion Sort</h2>
       <hr />
     </div>
-    <script src="../mthreadSort.js" Cross-Origin-Opener-Policy="same-origin" Cross-Origin-Embedder-Policy="require-corp"></script>
+    <script src="../sort.js" Cross-Origin-Opener-Policy="same-origin" Cross-Origin-Embedder-Policy="require-corp"></script>
     <script>
       var result = Module.onRuntimeInitialized = () => {
         let test = new Module.SortAlgorithm()
@@ -18,7 +18,7 @@
           vec.push_back(Math.floor(Math.random() * 2000))
         }
         const t0 = performance.now()
-        var list = test.mthread_insertion_sort(vec)
+        var list = test.insertion_sort(vec)
         const t1 = performance.now()
         var timing = (t1-t0) * 1000
   
