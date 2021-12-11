@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,9 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-// import Image from 'react-bootstrap/Image'
-
-// import logo from './images/logo2.jpeg'
+import FooterSection from './Components/FooterSection';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,8 +16,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/NavComponent';
 import Banner from './Components/Banner'
 
+// import Sort from './Emscripten/frontend/sort.html'
+
+// const reload = () => window.location.reload();
+
 ReactDOM.render(
   <React.StrictMode>
+    <BrowserRouter>
     <Navbar/>
     {/* <Image src={logo} width="100%" /> */}
     <Banner />
@@ -31,6 +35,11 @@ ReactDOM.render(
         <Col></Col>
       </Row>
     </Container>
+    <FooterSection />
+    <Routes>
+      <Route path="../Emscripten/frontend/sort.html" />
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

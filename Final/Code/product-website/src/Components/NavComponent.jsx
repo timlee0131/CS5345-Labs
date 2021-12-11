@@ -2,29 +2,34 @@ import React from 'react';
 import './../App.css';
 
 import Navbar from 'react-bootstrap/Navbar'
-// import Nav from 'react-bootstrap/Nav'
+import Nav from 'react-bootstrap/Nav'
+import Button from 'react-bootstrap/Button'
 // import NavDropdown from 'react-bootstrap/NavDropdown'
 import Container from 'react-bootstrap/Container'
+
+import icon from '../images/favicon.ico'
 
 function NavComponent(props) {
     return (
         <Navbar bg="dark" expand="lg" variant="dark">
             <Container>
+                <img
+                    alt=""
+                    src={icon}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                /> {'\t'}
                 <Navbar.Brand href="#home">Sorting Engine</Navbar.Brand>
-                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown>
                 </Nav>
-                </Navbar.Collapse> */}
+                <div>
+                <a href="./../Emscripten/frontend/sort.html" target="_blank"><Button variant="warning" size="sm" active>Demo Web App</Button></a>{' '}
+                    <Button variant="warning" size="sm" active>Download Native App</Button>
+                </div>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )
