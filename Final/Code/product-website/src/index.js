@@ -37,7 +37,7 @@ ReactDOM.render(
     </Container>
     <FooterSection />
     <Routes>
-      <Route path="../Emscripten/frontend/sort.html" />
+      <Route path="/CS5345Final/Emscripten/frontend/sort.html" />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

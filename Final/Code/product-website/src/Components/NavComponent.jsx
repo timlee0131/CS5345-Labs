@@ -26,8 +26,8 @@ function NavComponent(props) {
                 <Nav className="me-auto">
                 </Nav>
                 <div>
-                <a href="./../Emscripten/frontend/sort.html" target="_blank"><Button variant="warning" size="sm" active>Demo Web App</Button></a>{' '}
-                    <Button variant="warning" size="sm" active>Download Native App</Button>
+                <a href="/CS5345Final/Emscripten/frontend/sort.html" target="_blank"><Button variant="warning" size="sm" active>Demo Web App</Button></a>{' '}
+                    <a href="code.zip" download><Button variant="warning" size="sm" active>Download Native App</Button></a>
                 </div>
                 </Navbar.Collapse>
             </Container>
